@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71CF39F81A2B679D005DDE84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF39F71A2B679D005DDE84 /* AppDelegate.m */; };
+		71CF39FA1A2B679D005DDE84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF39F91A2B679D005DDE84 /* main.m */; };
+		71CF39FC1A2B679D005DDE84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71CF39FB1A2B679D005DDE84 /* Images.xcassets */; };
+		71CF39FF1A2B679D005DDE84 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71CF39FD1A2B679D005DDE84 /* MainMenu.xib */; };
+		71CF3A0B1A2B679D005DDE84 /* SoundCloudStatusBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF3A0A1A2B679D005DDE84 /* SoundCloudStatusBarTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71CF3A051A2B679D005DDE84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71CF39E91A2B679C005DDE84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71CF39F01A2B679D005DDE84;
+			remoteInfo = SoundCloudStatusBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		71CF39F11A2B679D005DDE84 /* SoundCloudStatusBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCloudStatusBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71CF39F51A2B679D005DDE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71CF39F61A2B679D005DDE84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		71CF39F71A2B679D005DDE84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		71CF39F91A2B679D005DDE84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		71CF39FB1A2B679D005DDE84 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		71CF39FE1A2B679D005DDE84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		71CF3A041A2B679D005DDE84 /* SoundCloudStatusBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundCloudStatusBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71CF3A091A2B679D005DDE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71CF3A0A1A2B679D005DDE84 /* SoundCloudStatusBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundCloudStatusBarTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71CF39EE1A2B679D005DDE84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71CF3A011A2B679D005DDE84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71CF39E81A2B679C005DDE84 = {
+			isa = PBXGroup;
+			children = (
+				71CF39F31A2B679D005DDE84 /* SoundCloudStatusBar */,
+				71CF3A071A2B679D005DDE84 /* SoundCloudStatusBarTests */,
+				71CF39F21A2B679D005DDE84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71CF39F21A2B679D005DDE84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71CF39F11A2B679D005DDE84 /* SoundCloudStatusBar.app */,
+				71CF3A041A2B679D005DDE84 /* SoundCloudStatusBarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71CF39F31A2B679D005DDE84 /* SoundCloudStatusBar */ = {
+			isa = PBXGroup;
+			children = (
+				71CF39F61A2B679D005DDE84 /* AppDelegate.h */,
+				71CF39F71A2B679D005DDE84 /* AppDelegate.m */,
+				71CF39FB1A2B679D005DDE84 /* Images.xcassets */,
+				71CF39FD1A2B679D005DDE84 /* MainMenu.xib */,
+				71CF39F41A2B679D005DDE84 /* Supporting Files */,
+			);
+			path = SoundCloudStatusBar;
+			sourceTree = "<group>";
+		};
+		71CF39F41A2B679D005DDE84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				71CF39F51A2B679D005DDE84 /* Info.plist */,
+				71CF39F91A2B679D005DDE84 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71CF3A071A2B679D005DDE84 /* SoundCloudStatusBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				71CF3A0A1A2B679D005DDE84 /* SoundCloudStatusBarTests.m */,
+				71CF3A081A2B679D005DDE84 /* Supporting Files */,
+			);
+			path = SoundCloudStatusBarTests;
+			sourceTree = "<group>";
+		};
+		71CF3A081A2B679D005DDE84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				71CF3A091A2B679D005DDE84 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71CF39F01A2B679D005DDE84 /* SoundCloudStatusBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71CF3A0E1A2B679D005DDE84 /* Build configuration list for PBXNativeTarget "SoundCloudStatusBar" */;
+			buildPhases = (
+				71CF39ED1A2B679D005DDE84 /* Sources */,
+				71CF39EE1A2B679D005DDE84 /* Frameworks */,
+				71CF39EF1A2B679D005DDE84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundCloudStatusBar;
+			productName = SoundCloudStatusBar;
+			productReference = 71CF39F11A2B679D005DDE84 /* SoundCloudStatusBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71CF3A031A2B679D005DDE84 /* SoundCloudStatusBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71CF3A111A2B679D005DDE84 /* Build configuration list for PBXNativeTarget "SoundCloudStatusBarTests" */;
+			buildPhases = (
+				71CF3A001A2B679D005DDE84 /* Sources */,
+				71CF3A011A2B679D005DDE84 /* Frameworks */,
+				71CF3A021A2B679D005DDE84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71CF3A061A2B679D005DDE84 /* PBXTargetDependency */,
+			);
+			name = SoundCloudStatusBarTests;
+			productName = SoundCloudStatusBarTests;
+			productReference = 71CF3A041A2B679D005DDE84 /* SoundCloudStatusBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71CF39E91A2B679C005DDE84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Alexander Rubin";
+				TargetAttributes = {
+					71CF39F01A2B679D005DDE84 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					71CF3A031A2B679D005DDE84 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 71CF39F01A2B679D005DDE84;
+					};
+				};
+			};
+			buildConfigurationList = 71CF39EC1A2B679C005DDE84 /* Build configuration list for PBXProject "SoundCloudStatusBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71CF39E81A2B679C005DDE84;
+			productRefGroup = 71CF39F21A2B679D005DDE84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71CF39F01A2B679D005DDE84 /* SoundCloudStatusBar */,
+				71CF3A031A2B679D005DDE84 /* SoundCloudStatusBarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71CF39EF1A2B679D005DDE84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71CF39FC1A2B679D005DDE84 /* Images.xcassets in Resources */,
+				71CF39FF1A2B679D005DDE84 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71CF3A021A2B679D005DDE84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71CF39ED1A2B679D005DDE84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71CF39FA1A2B679D005DDE84 /* main.m in Sources */,
+				71CF39F81A2B679D005DDE84 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71CF3A001A2B679D005DDE84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71CF3A0B1A2B679D005DDE84 /* SoundCloudStatusBarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71CF3A061A2B679D005DDE84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71CF39F01A2B679D005DDE84 /* SoundCloudStatusBar */;
+			targetProxy = 71CF3A051A2B679D005DDE84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		71CF39FD1A2B679D005DDE84 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71CF39FE1A2B679D005DDE84 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71CF3A0C1A2B679D005DDE84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		71CF3A0D1A2B679D005DDE84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		71CF3A0F1A2B679D005DDE84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SoundCloudStatusBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		71CF3A101A2B679D005DDE84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SoundCloudStatusBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		71CF3A121A2B679D005DDE84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SoundCloudStatusBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundCloudStatusBar.app/Contents/MacOS/SoundCloudStatusBar";
+			};
+			name = Debug;
+		};
+		71CF3A131A2B679D005DDE84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SoundCloudStatusBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundCloudStatusBar.app/Contents/MacOS/SoundCloudStatusBar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71CF39EC1A2B679C005DDE84 /* Build configuration list for PBXProject "SoundCloudStatusBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71CF3A0C1A2B679D005DDE84 /* Debug */,
+				71CF3A0D1A2B679D005DDE84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71CF3A0E1A2B679D005DDE84 /* Build configuration list for PBXNativeTarget "SoundCloudStatusBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71CF3A0F1A2B679D005DDE84 /* Debug */,
+				71CF3A101A2B679D005DDE84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		71CF3A111A2B679D005DDE84 /* Build configuration list for PBXNativeTarget "SoundCloudStatusBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71CF3A121A2B679D005DDE84 /* Debug */,
+				71CF3A131A2B679D005DDE84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71CF39E91A2B679C005DDE84 /* Project object */;
+}
