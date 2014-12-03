@@ -7,11 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71625EDC1A2F5C6F00BD5980 /* PlayButtonScript.txt in Resources */ = {isa = PBXBuildFile; fileRef = 71625EDB1A2F5C6F00BD5980 /* PlayButtonScript.txt */; };
 		71CF39F81A2B679D005DDE84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF39F71A2B679D005DDE84 /* AppDelegate.m */; };
 		71CF39FA1A2B679D005DDE84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF39F91A2B679D005DDE84 /* main.m */; };
 		71CF39FC1A2B679D005DDE84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71CF39FB1A2B679D005DDE84 /* Images.xcassets */; };
 		71CF39FF1A2B679D005DDE84 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71CF39FD1A2B679D005DDE84 /* MainMenu.xib */; };
 		71CF3A0B1A2B679D005DDE84 /* SoundCloudStatusBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF3A0A1A2B679D005DDE84 /* SoundCloudStatusBarTests.m */; };
+		71CF3A1A1A2B7040005DDE84 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71CF3A191A2B7040005DDE84 /* WebKit.framework */; };
+		71CF3A291A2C50CC005DDE84 /* INAppStoreWindowSwizzling.c in Sources */ = {isa = PBXBuildFile; fileRef = 71CF3A1E1A2C50CC005DDE84 /* INAppStoreWindowSwizzling.c */; };
+		71CF3A2A1A2C50CC005DDE84 /* INWindowBackgroundView+CoreUIRendering.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF3A211A2C50CC005DDE84 /* INWindowBackgroundView+CoreUIRendering.m */; };
+		71CF3A2B1A2C50CC005DDE84 /* NSDocument+INAppStoreWindowFixes.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF3A231A2C50CC005DDE84 /* NSDocument+INAppStoreWindowFixes.m */; };
+		71CF3A2C1A2C50CC005DDE84 /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF3A251A2C50CC005DDE84 /* INAppStoreWindow.m */; };
+		71CF3A2D1A2C50CC005DDE84 /* INWindowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF3A281A2C50CC005DDE84 /* INWindowButton.m */; };
+		71CF3A331A2DDBDD005DDE84 /* TrackTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF3A321A2DDBDD005DDE84 /* TrackTitleView.m */; };
+		71CF3A371A2DF893005DDE84 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF3A361A2DF893005DDE84 /* GTMNSString+HTML.m */; };
+		71CF3A3A1A2E4D2B005DDE84 /* SCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF3A391A2E4D2B005DDE84 /* SCModel.m */; };
+		71CF3A3C1A2E5725005DDE84 /* SCModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF3A3B1A2E5724005DDE84 /* SCModelTests.m */; };
+		71E54E2B1A2F1B4F00F7EE2E /* StatusMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71E54E2A1A2F1B4F00F7EE2E /* StatusMenuView.xib */; };
+		71E54E2E1A2F1E7F00F7EE2E /* StatusMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E54E2D1A2F1E7F00F7EE2E /* StatusMenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		71625EDB1A2F5C6F00BD5980 /* PlayButtonScript.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PlayButtonScript.txt; sourceTree = "<group>"; };
 		71CF39F11A2B679D005DDE84 /* SoundCloudStatusBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCloudStatusBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71CF39F51A2B679D005DDE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71CF39F61A2B679D005DDE84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,6 +49,28 @@
 		71CF3A041A2B679D005DDE84 /* SoundCloudStatusBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundCloudStatusBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71CF3A091A2B679D005DDE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71CF3A0A1A2B679D005DDE84 /* SoundCloudStatusBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundCloudStatusBarTests.m; sourceTree = "<group>"; };
+		71CF3A191A2B7040005DDE84 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		71CF3A1E1A2C50CC005DDE84 /* INAppStoreWindowSwizzling.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = INAppStoreWindowSwizzling.c; sourceTree = "<group>"; };
+		71CF3A1F1A2C50CC005DDE84 /* INAppStoreWindowSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INAppStoreWindowSwizzling.h; sourceTree = "<group>"; };
+		71CF3A201A2C50CC005DDE84 /* INWindowBackgroundView+CoreUIRendering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "INWindowBackgroundView+CoreUIRendering.h"; sourceTree = "<group>"; };
+		71CF3A211A2C50CC005DDE84 /* INWindowBackgroundView+CoreUIRendering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "INWindowBackgroundView+CoreUIRendering.m"; sourceTree = "<group>"; };
+		71CF3A221A2C50CC005DDE84 /* NSDocument+INAppStoreWindowFixes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDocument+INAppStoreWindowFixes.h"; sourceTree = "<group>"; };
+		71CF3A231A2C50CC005DDE84 /* NSDocument+INAppStoreWindowFixes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDocument+INAppStoreWindowFixes.m"; sourceTree = "<group>"; };
+		71CF3A241A2C50CC005DDE84 /* INAppStoreWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INAppStoreWindow.h; sourceTree = "<group>"; };
+		71CF3A251A2C50CC005DDE84 /* INAppStoreWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INAppStoreWindow.m; sourceTree = "<group>"; };
+		71CF3A261A2C50CC005DDE84 /* INAppStoreWindowCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INAppStoreWindowCompatibility.h; sourceTree = "<group>"; };
+		71CF3A271A2C50CC005DDE84 /* INWindowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INWindowButton.h; sourceTree = "<group>"; };
+		71CF3A281A2C50CC005DDE84 /* INWindowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INWindowButton.m; sourceTree = "<group>"; };
+		71CF3A311A2DDBDD005DDE84 /* TrackTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackTitleView.h; sourceTree = "<group>"; };
+		71CF3A321A2DDBDD005DDE84 /* TrackTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackTitleView.m; sourceTree = "<group>"; };
+		71CF3A351A2DF893005DDE84 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		71CF3A361A2DF893005DDE84 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		71CF3A381A2E4D2B005DDE84 /* SCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCModel.h; sourceTree = "<group>"; };
+		71CF3A391A2E4D2B005DDE84 /* SCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCModel.m; sourceTree = "<group>"; };
+		71CF3A3B1A2E5724005DDE84 /* SCModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCModelTests.m; sourceTree = "<group>"; };
+		71E54E2A1A2F1B4F00F7EE2E /* StatusMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusMenuView.xib; sourceTree = "<group>"; };
+		71E54E2C1A2F1E7F00F7EE2E /* StatusMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusMenuView.h; sourceTree = "<group>"; };
+		71E54E2D1A2F1E7F00F7EE2E /* StatusMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusMenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71CF3A1A1A2B7040005DDE84 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,9 +92,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71625ED81A2F597300BD5980 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				71CF3A311A2DDBDD005DDE84 /* TrackTitleView.h */,
+				71CF3A321A2DDBDD005DDE84 /* TrackTitleView.m */,
+				71E54E2A1A2F1B4F00F7EE2E /* StatusMenuView.xib */,
+				71E54E2C1A2F1E7F00F7EE2E /* StatusMenuView.h */,
+				71E54E2D1A2F1E7F00F7EE2E /* StatusMenuView.m */,
+			);
+			name = "Custom View";
+			sourceTree = "<group>";
+		};
+		71625ED91A2F59A300BD5980 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71CF3A381A2E4D2B005DDE84 /* SCModel.h */,
+				71CF3A391A2E4D2B005DDE84 /* SCModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		71625EDA1A2F5C5900BD5980 /* Java Script */ = {
+			isa = PBXGroup;
+			children = (
+				71625EDB1A2F5C6F00BD5980 /* PlayButtonScript.txt */,
+			);
+			name = "Java Script";
+			sourceTree = "<group>";
+		};
+		71625EDD1A2F636A00BD5980 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71CF3A191A2B7040005DDE84 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		71CF39E81A2B679C005DDE84 = {
 			isa = PBXGroup;
 			children = (
+				71625EDD1A2F636A00BD5980 /* Frameworks */,
+				71CF3A1B1A2C50BC005DDE84 /* Dependencies */,
 				71CF39F31A2B679D005DDE84 /* SoundCloudStatusBar */,
 				71CF3A071A2B679D005DDE84 /* SoundCloudStatusBarTests */,
 				71CF39F21A2B679D005DDE84 /* Products */,
@@ -76,6 +152,10 @@
 		71CF39F31A2B679D005DDE84 /* SoundCloudStatusBar */ = {
 			isa = PBXGroup;
 			children = (
+				71625EDA1A2F5C5900BD5980 /* Java Script */,
+				71625ED91A2F59A300BD5980 /* Model */,
+				71CF3A341A2DF87F005DDE84 /* Categories */,
+				71625ED81A2F597300BD5980 /* Custom View */,
 				71CF39F61A2B679D005DDE84 /* AppDelegate.h */,
 				71CF39F71A2B679D005DDE84 /* AppDelegate.m */,
 				71CF39FB1A2B679D005DDE84 /* Images.xcassets */,
@@ -98,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				71CF3A0A1A2B679D005DDE84 /* SoundCloudStatusBarTests.m */,
+				71CF3A3B1A2E5724005DDE84 /* SCModelTests.m */,
 				71CF3A081A2B679D005DDE84 /* Supporting Files */,
 			);
 			path = SoundCloudStatusBarTests;
@@ -109,6 +190,49 @@
 				71CF3A091A2B679D005DDE84 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71CF3A1B1A2C50BC005DDE84 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				71CF3A1C1A2C50CC005DDE84 /* INAppStoreWindow */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		71CF3A1C1A2C50CC005DDE84 /* INAppStoreWindow */ = {
+			isa = PBXGroup;
+			children = (
+				71CF3A1D1A2C50CC005DDE84 /* Extensions */,
+				71CF3A241A2C50CC005DDE84 /* INAppStoreWindow.h */,
+				71CF3A251A2C50CC005DDE84 /* INAppStoreWindow.m */,
+				71CF3A261A2C50CC005DDE84 /* INAppStoreWindowCompatibility.h */,
+				71CF3A271A2C50CC005DDE84 /* INWindowButton.h */,
+				71CF3A281A2C50CC005DDE84 /* INWindowButton.m */,
+			);
+			path = INAppStoreWindow;
+			sourceTree = "<group>";
+		};
+		71CF3A1D1A2C50CC005DDE84 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				71CF3A1E1A2C50CC005DDE84 /* INAppStoreWindowSwizzling.c */,
+				71CF3A1F1A2C50CC005DDE84 /* INAppStoreWindowSwizzling.h */,
+				71CF3A201A2C50CC005DDE84 /* INWindowBackgroundView+CoreUIRendering.h */,
+				71CF3A211A2C50CC005DDE84 /* INWindowBackgroundView+CoreUIRendering.m */,
+				71CF3A221A2C50CC005DDE84 /* NSDocument+INAppStoreWindowFixes.h */,
+				71CF3A231A2C50CC005DDE84 /* NSDocument+INAppStoreWindowFixes.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		71CF3A341A2DF87F005DDE84 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				71CF3A351A2DF893005DDE84 /* GTMNSString+HTML.h */,
+				71CF3A361A2DF893005DDE84 /* GTMNSString+HTML.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,8 +315,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71625EDC1A2F5C6F00BD5980 /* PlayButtonScript.txt in Resources */,
 				71CF39FC1A2B679D005DDE84 /* Images.xcassets in Resources */,
 				71CF39FF1A2B679D005DDE84 /* MainMenu.xib in Resources */,
+				71E54E2B1A2F1B4F00F7EE2E /* StatusMenuView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,8 +336,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E54E2E1A2F1E7F00F7EE2E /* StatusMenuView.m in Sources */,
+				71CF3A2A1A2C50CC005DDE84 /* INWindowBackgroundView+CoreUIRendering.m in Sources */,
+				71CF3A331A2DDBDD005DDE84 /* TrackTitleView.m in Sources */,
+				71CF3A2B1A2C50CC005DDE84 /* NSDocument+INAppStoreWindowFixes.m in Sources */,
 				71CF39FA1A2B679D005DDE84 /* main.m in Sources */,
+				71CF3A371A2DF893005DDE84 /* GTMNSString+HTML.m in Sources */,
+				71CF3A291A2C50CC005DDE84 /* INAppStoreWindowSwizzling.c in Sources */,
+				71CF3A2C1A2C50CC005DDE84 /* INAppStoreWindow.m in Sources */,
+				71CF3A2D1A2C50CC005DDE84 /* INWindowButton.m in Sources */,
 				71CF39F81A2B679D005DDE84 /* AppDelegate.m in Sources */,
+				71CF3A3A1A2E4D2B005DDE84 /* SCModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71CF3A0B1A2B679D005DDE84 /* SoundCloudStatusBarTests.m in Sources */,
+				71CF3A3C1A2E5725005DDE84 /* SCModelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +534,7 @@
 				71CF3A101A2B679D005DDE84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71CF3A111A2B679D005DDE84 /* Build configuration list for PBXNativeTarget "SoundCloudStatusBarTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +543,7 @@
 				71CF3A131A2B679D005DDE84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

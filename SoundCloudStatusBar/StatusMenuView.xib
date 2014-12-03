@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AppDelegate">
+            <connections>
+                <outlet property="statusMenuView" destination="c22-O7-iKe" id="dyt-Ok-bvO"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView verticalHuggingPriority="249" id="c22-O7-iKe" customClass="StatusMenuView">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="eKX-cw-HrQ">
+                    <rect key="frame" x="20" y="5" width="28" height="32"/>
+                    <buttonCell key="cell" type="bevel" title="Button" bezelStyle="rounded" image="prevTrackIcon" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="UaO-XL-sxW">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="7A1-UX-wNu">
+                    <rect key="frame" x="104" y="5" width="28" height="32"/>
+                    <buttonCell key="cell" type="bevel" title="Button" bezelStyle="rounded" image="nextTrackIcon" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="Ide-tG-XdA">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button horizontalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="d8e-YA-F5c">
+                    <rect key="frame" x="56" y="5" width="40" height="32"/>
+                    <buttonCell key="cell" type="bevel" title="Button" bezelStyle="rounded" image="playIcon" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="aD0-EC-WSk">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="d8e-YA-F5c" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="5" id="18p-Fr-NoB"/>
+                <constraint firstAttribute="bottom" secondItem="eKX-cw-HrQ" secondAttribute="bottom" constant="5" id="5W7-0m-ITi"/>
+                <constraint firstItem="eKX-cw-HrQ" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="5" id="LJq-df-f8Q"/>
+                <constraint firstAttribute="bottom" secondItem="d8e-YA-F5c" secondAttribute="bottom" constant="5" id="NpR-LD-muD"/>
+                <constraint firstItem="7A1-UX-wNu" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="5" id="VFD-iA-7ON"/>
+                <constraint firstAttribute="trailing" secondItem="7A1-UX-wNu" secondAttribute="trailing" constant="20" id="Wzl-Y2-Lvz"/>
+                <constraint firstItem="d8e-YA-F5c" firstAttribute="leading" secondItem="eKX-cw-HrQ" secondAttribute="trailing" constant="8" id="cRB-Ur-TIT"/>
+                <constraint firstItem="eKX-cw-HrQ" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" id="fOr-aO-h7t"/>
+                <constraint firstItem="d8e-YA-F5c" firstAttribute="leading" secondItem="eKX-cw-HrQ" secondAttribute="trailing" constant="8" id="giH-mn-mIG"/>
+                <constraint firstAttribute="bottom" secondItem="7A1-UX-wNu" secondAttribute="bottom" constant="5" id="pZZ-m7-soX"/>
+                <constraint firstItem="7A1-UX-wNu" firstAttribute="leading" secondItem="d8e-YA-F5c" secondAttribute="trailing" constant="8" id="s8b-bC-qdl"/>
+            </constraints>
+            <connections>
+                <outlet property="nextTrackButton" destination="7A1-UX-wNu" id="xaD-Ou-iSS"/>
+                <outlet property="playButton" destination="d8e-YA-F5c" id="unH-wi-qTT"/>
+                <outlet property="previousTrackButton" destination="eKX-cw-HrQ" id="wVY-Lt-wVL"/>
+            </connections>
+            <point key="canvasLocation" x="396" y="334"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="nextTrackIcon" width="28" height="28"/>
+        <image name="playIcon" width="26" height="26"/>
+        <image name="prevTrackIcon" width="28" height="28"/>
+    </resources>
+</document>

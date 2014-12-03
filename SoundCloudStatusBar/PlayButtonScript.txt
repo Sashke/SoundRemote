@@ -1,0 +1,7 @@
+var array = document.getElementsByClassName("playControl sc-ir");
+var elementClass = array[0].className;
+var disabledClass = 'playControl sc-ir disabled';
+if (elementClass === disabledClass) {
+array = document.getElementsByClassName('sc-button-play sc-button sc-button-large');
+}
+array[0].click();

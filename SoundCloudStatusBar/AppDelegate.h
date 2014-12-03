@@ -7,9 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "SCModel.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
 
-
+@interface AppDelegate : NSObject <NSApplicationDelegate, SCModel>
 @end
 
