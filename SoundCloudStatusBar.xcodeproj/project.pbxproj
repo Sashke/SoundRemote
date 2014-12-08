@@ -25,6 +25,8 @@
 		71CF3A3C1A2E5725005DDE84 /* SCModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CF3A3B1A2E5724005DDE84 /* SCModelTests.m */; };
 		71E54E2B1A2F1B4F00F7EE2E /* StatusMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71E54E2A1A2F1B4F00F7EE2E /* StatusMenuView.xib */; };
 		71E54E2E1A2F1E7F00F7EE2E /* StatusMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E54E2D1A2F1E7F00F7EE2E /* StatusMenuView.m */; };
+		A43364861A35ED290090F2BF /* WebViewWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = A43364841A35ED290090F2BF /* WebViewWindowController.m */; };
+		A43364871A35ED290090F2BF /* WebViewWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A43364851A35ED290090F2BF /* WebViewWindowController.xib */; };
 		A4F5A6171A35C4DA0008EB37 /* WAYAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F5A6141A35C4DA0008EB37 /* WAYAppStoreWindow.m */; };
 		A4F5A6181A35C4DA0008EB37 /* WAYWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F5A6161A35C4DA0008EB37 /* WAYWindow.m */; };
 		A4F5A61A1A35C62B0008EB37 /* TrackTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F5A6191A35C62B0008EB37 /* TrackTitleView.xib */; };
@@ -74,6 +76,9 @@
 		71E54E2A1A2F1B4F00F7EE2E /* StatusMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusMenuView.xib; sourceTree = "<group>"; };
 		71E54E2C1A2F1E7F00F7EE2E /* StatusMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusMenuView.h; sourceTree = "<group>"; };
 		71E54E2D1A2F1E7F00F7EE2E /* StatusMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusMenuView.m; sourceTree = "<group>"; };
+		A43364831A35ED290090F2BF /* WebViewWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewWindowController.h; sourceTree = "<group>"; };
+		A43364841A35ED290090F2BF /* WebViewWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewWindowController.m; sourceTree = "<group>"; };
+		A43364851A35ED290090F2BF /* WebViewWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewWindowController.xib; sourceTree = "<group>"; };
 		A4F5A6131A35C4DA0008EB37 /* WAYAppStoreWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAYAppStoreWindow.h; sourceTree = "<group>"; };
 		A4F5A6141A35C4DA0008EB37 /* WAYAppStoreWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAYAppStoreWindow.m; sourceTree = "<group>"; };
 		A4F5A6151A35C4DA0008EB37 /* WAYWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAYWindow.h; sourceTree = "<group>"; };
@@ -170,6 +175,9 @@
 				71CF39FB1A2B679D005DDE84 /* Images.xcassets */,
 				71CF39FD1A2B679D005DDE84 /* MainMenu.xib */,
 				71CF39F41A2B679D005DDE84 /* Supporting Files */,
+				A43364831A35ED290090F2BF /* WebViewWindowController.h */,
+				A43364841A35ED290090F2BF /* WebViewWindowController.m */,
+				A43364851A35ED290090F2BF /* WebViewWindowController.xib */,
 			);
 			path = SoundCloudStatusBar;
 			sourceTree = "<group>";
@@ -339,6 +347,7 @@
 				71625EDC1A2F5C6F00BD5980 /* PlayButtonScript.txt in Resources */,
 				71CF39FC1A2B679D005DDE84 /* Images.xcassets in Resources */,
 				A4F5A61A1A35C62B0008EB37 /* TrackTitleView.xib in Resources */,
+				A43364871A35ED290090F2BF /* WebViewWindowController.xib in Resources */,
 				71CF39FF1A2B679D005DDE84 /* MainMenu.xib in Resources */,
 				71E54E2B1A2F1B4F00F7EE2E /* StatusMenuView.xib in Resources */,
 			);
@@ -365,6 +374,7 @@
 				71CF3A2B1A2C50CC005DDE84 /* NSDocument+INAppStoreWindowFixes.m in Sources */,
 				71CF39FA1A2B679D005DDE84 /* main.m in Sources */,
 				71CF3A371A2DF893005DDE84 /* GTMNSString+HTML.m in Sources */,
+				A43364861A35ED290090F2BF /* WebViewWindowController.m in Sources */,
 				71CF3A291A2C50CC005DDE84 /* INAppStoreWindowSwizzling.c in Sources */,
 				71CF3A2C1A2C50CC005DDE84 /* INAppStoreWindow.m in Sources */,
 				71CF3A2D1A2C50CC005DDE84 /* INWindowButton.m in Sources */,

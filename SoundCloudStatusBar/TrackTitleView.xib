@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6249" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6249"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="AppDelegate">
+        <customObject id="-2" userLabel="File's Owner" customClass="WebViewWindowController">
             <connections>
                 <outlet property="trackTitleView" destination="c22-O7-iKe" id="egZ-se-mWK"/>
             </connections>
@@ -14,8 +15,8 @@
         <customView translatesAutoresizingMaskIntoConstraints="NO" id="c22-O7-iKe" customClass="TrackTitleView">
             <rect key="frame" x="0.0" y="0.0" width="253" height="27"/>
             <subviews>
-                <textField autoresizesSubviews="NO" horizontalHuggingPriority="230" verticalHuggingPriority="200" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rNQ-Mu-48v">
-                    <rect key="frame" x="18" y="5" width="217" height="17"/>
+                <textField autoresizesSubviews="NO" horizontalHuggingPriority="230" verticalHuggingPriority="200" horizontalCompressionResistancePriority="200" verticalCompressionResistancePriority="300" translatesAutoresizingMaskIntoConstraints="NO" id="rNQ-Mu-48v">
+                    <rect key="frame" x="18" y="4" width="217" height="19"/>
                     <textFieldCell key="cell" lineBreakMode="truncatingTail" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="center" id="KWC-sm-Nz2">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -24,10 +25,10 @@
                 </textField>
             </subviews>
             <constraints>
-                <constraint firstItem="rNQ-Mu-48v" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="5" id="8w8-uK-cb7"/>
+                <constraint firstItem="rNQ-Mu-48v" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="4" id="8w8-uK-cb7"/>
                 <constraint firstAttribute="trailing" secondItem="rNQ-Mu-48v" secondAttribute="trailing" constant="20" id="9Zz-eB-Pii"/>
                 <constraint firstItem="rNQ-Mu-48v" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" id="Hu4-cr-gOb"/>
-                <constraint firstAttribute="bottom" secondItem="rNQ-Mu-48v" secondAttribute="bottom" constant="5" id="Wcb-Yu-bFO"/>
+                <constraint firstAttribute="bottom" secondItem="rNQ-Mu-48v" secondAttribute="bottom" constant="4" id="Wcb-Yu-bFO"/>
                 <constraint firstAttribute="centerX" secondItem="rNQ-Mu-48v" secondAttribute="centerX" id="dfc-we-iLZ"/>
             </constraints>
             <connections>
