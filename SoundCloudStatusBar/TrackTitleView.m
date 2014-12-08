@@ -10,7 +10,7 @@
 #import "GTMNSString+HTML.h"
 
 @interface TrackTitleView()
-@property (strong, nonatomic) NSTextField *textField;
+@property (weak) IBOutlet NSTextField *textField;
 @end
 
 @implementation TrackTitleView
@@ -30,21 +30,5 @@
     }
     
 }
-
-- (NSTextField *)textField {
-    if (!_textField) {
-        NSTextField *textField = [[NSTextField alloc] initWithFrame:NSMakeRect(0, NSMidY(self.frame) - self.frame.size.height / 2 - 2, self.frame.size.width, 20)];
-        textField.editable = NO;
-        textField.selectable = NO;
-        textField.backgroundColor = [NSColor clearColor];
-        textField.bordered = NO;
-        textField.alignment = NSCenterTextAlignment;
-        _textField = textField;
-        [self addSubview:_textField];
-    }
-    return _textField;
-}
-
-
 
 @end

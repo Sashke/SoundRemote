@@ -18,10 +18,12 @@
 @property (weak) IBOutlet WebView *webView;
 @property (weak) IBOutlet NSMenu *statusBarMenu;
 @property (strong) IBOutlet StatusMenuView *statusMenuView;
+@property (strong) IBOutlet TrackTitleView *trackTitleView;
 
 @property (strong, nonatomic) SCModel *model;
 @property (assign, nonatomic) BOOL playing;
 
+@property (strong, nonatomic) NSView *titleBarView;
 @property (strong, nonatomic) NSStatusItem *statusItem;
 @property (strong, nonatomic) NSButton *backButton;
 @property (strong, nonatomic) NSButton *refreshButton;
@@ -29,7 +31,7 @@
 @property (strong, nonatomic) NSButton *playButton;
 @property (strong, nonatomic) NSButton *previousTrackButton;
 @property (strong, nonatomic) NSButton *nextTrackButton;
-@property (strong, nonatomic) TrackTitleView *trackBackgroundView;
+//@property (strong, nonatomic) TrackTitleView *trackBackgroundView;
 @end
 
 typedef NS_ENUM(NSInteger, barButtonsType)  {
@@ -51,7 +53,9 @@ typedef NS_ENUM(NSInteger, barButtonsType)  {
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.webView.mainFrame loadRequest:request];
     [self.window setContentView:self.webView];
-
+    INAppStoreWindow *aWindow = (INAppStoreWindow*)self.window;
+    aWindow.titleBarHeight = 40;
+    self.titleBarView = aWindow.titleBarView;
     [self setupBarLayout];
     self.model = [[SCModel alloc] init];
     self.model.delegate = self;
@@ -96,7 +100,7 @@ typedef NS_ENUM(NSInteger, barButtonsType)  {
 
 - (void)statesUpdatedWithPlayingState:(BOOL)playingState trackTitle:(NSString *)trackTitle {
     self.playing = playingState;
-    self.trackBackgroundView.trackTitle = trackTitle;
+    self.trackTitleView.trackTitle = trackTitle;
 }
 
 - (NSString *)needToEvaluateJavaScriptString:(NSString *)javaScriptString {
@@ -121,18 +125,14 @@ typedef NS_ENUM(NSInteger, barButtonsType)  {
 #pragma mark - Subviews
 
 - (void)setupBarLayout {
-    INAppStoreWindow *aWindow = (INAppStoreWindow *)self.window;
-    aWindow.titleBarHeight = 40;
-    NSView *titleBarView = aWindow.titleBarView;
-    
     CGRect frame;
     NSString *imageName;
     SEL selector;
     
     CGFloat navigationButtonSize = 20;
     CGFloat trackButtonSize = 30;
-    CGFloat centerNavigationY = NSMidY(titleBarView.bounds) - navigationButtonSize / 2;
-    CGFloat centerTrackY = NSMidY(titleBarView.bounds) - trackButtonSize / 2;
+    CGFloat centerNavigationY = NSMidY(self.titleBarView.bounds) - navigationButtonSize / 2;
+    CGFloat centerTrackY = NSMidY(self.titleBarView.bounds) - trackButtonSize / 2;
     CGFloat inset = 5;
     CGFloat bigInset = 40;
     for (int i = 0; i < barButtonsNum; i++) {
@@ -200,18 +200,51 @@ typedef NS_ENUM(NSInteger, barButtonsType)  {
         button.action = selector;
         button.frame = frame;
         
-        [titleBarView addSubview:button];
+        [self.titleBarView addSubview:button];
     }
     
-    CGFloat x = NSMaxX(self.nextTrackButton.frame) + 80;
-    CGFloat width = titleBarView.frame.size.width - 100 - x;
-    self.trackBackgroundView = [[TrackTitleView alloc] initWithFrame:NSMakeRect(NSMaxX(self.nextTrackButton.frame) + 45,
-                                                                                NSMidY(titleBarView.bounds) - 15 ,
-                                                                                width,
-                                                                                30)];
-    [titleBarView addSubview:self.trackBackgroundView];
     
+    [self setupTrackTitleView];
     [self setupStatusBarItem];
+}
+
+- (void)setupTrackTitleView {
+    [[NSBundle mainBundle] loadNibNamed:@"TrackTitleView" owner:self topLevelObjects:nil];
+    [self.titleBarView addSubview:self.trackTitleView];
+    self.trackTitleView.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    NSDictionary *views = @{@"nextTrackButton" : self.nextTrackButton, @"titleBarView" : self.titleBarView, @"trackView" : self.trackTitleView};
+    [self.titleBarView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[nextTrackButton]-40-[trackView]"
+                                                                         options:0
+                                                                         metrics:nil
+                                                                           views:views]];
+    NSLayoutConstraint *xCenterConstraint = [NSLayoutConstraint constraintWithItem:self.trackTitleView
+                                                                         attribute:NSLayoutAttributeCenterY
+                                                                         relatedBy:NSLayoutRelationEqual
+                                                                            toItem:self.titleBarView
+                                                                         attribute:NSLayoutAttributeCenterY
+                                                                        multiplier:1.0
+                                                                          constant:0];
+    NSLayoutConstraint *yCenterConstraint = [NSLayoutConstraint constraintWithItem:self.trackTitleView
+                                                                         attribute:NSLayoutAttributeCenterX
+                                                                         relatedBy:NSLayoutRelationEqual
+                                                                            toItem:self.titleBarView
+                                                                         attribute:NSLayoutAttributeCenterX
+                                                                        multiplier:1.0
+                                                                          constant:0];
+    [self.titleBarView addConstraint:yCenterConstraint];
+    
+    [self.titleBarView addConstraint:xCenterConstraint];
+    
+    [self.titleBarView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-5-[trackView]-5-|"
+                                                                         options:0
+                                                                         metrics:nil
+                                                                           views:views]];
+    
+    [self.trackTitleView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[trackView(>=200)]"
+                                                                                options:0
+                                                                                metrics:nil
+                                                                                  views:views]];
 }
 
 - (void)setupStatusBarItem {
